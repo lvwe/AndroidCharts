@@ -18,7 +18,7 @@ import com.example.administrator.androidcharts.R;
 public abstract class BaseView extends View {
 
     private Context mContext;
-    private Paint mPaint;
+    public Paint mPaint;
 
     private String mGraphTitle;
     private String mXAxisName;
@@ -27,11 +27,19 @@ public abstract class BaseView extends View {
     private int mAxisTextColor;
 
     //视图的宽高
-    private int width;
-    private int height;
+    public int width;
+    public int height;
     //起点的X，Y坐标值
-    private int originalX = 100;
-    private int originalY = 800;
+    public int originalX = 100;
+    public int originalY = 800;
+
+    //X,Y轴等轴划分
+    public int axisDividedSizeX;
+    public int axisDividedSizeY;
+    //第一个纬度为值，第二个纬度为颜色
+    public int[][] columnInfo;
+    public float maxAxisValueX;
+    public float maxAxisValueY;
 
     public BaseView(Context context) {
         this(context, null);
