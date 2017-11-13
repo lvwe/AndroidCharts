@@ -18,15 +18,15 @@ public class MainActivity extends AppCompatActivity {
         mChartView = (ChartView) findViewById(R.id.columnView);
         int[][] columnInfo = new int[][]{
 
-                {6, Color.BLUE},
+                {3, Color.BLUE},
                 {5, Color.GREEN},
-                {7, Color.RED},
-                {3, Color.YELLOW},
+                {6, Color.LTGRAY},
+                {1, Color.YELLOW},
                 {2, Color.GRAY},
-                {8, Color.LTGRAY},
+                {5, Color.RED},
                 {1, Color.DKGRAY},
         };
-        mChartView.setXAxisValue(10, 9);
+        mChartView.setXAxisValue(10, 8);
         mChartView.setYAxisValue(10,7);
         mChartView.setColumnInfo(columnInfo);
     }

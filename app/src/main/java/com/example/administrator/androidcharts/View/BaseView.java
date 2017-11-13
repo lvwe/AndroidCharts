@@ -17,7 +17,7 @@ import com.example.administrator.androidcharts.R;
 
 public abstract class BaseView extends View {
 
-    private Context mContext;
+    public Context mContext;
     public Paint mPaint;
 
     private String mGraphTitle;
@@ -29,7 +29,7 @@ public abstract class BaseView extends View {
     //视图的宽高
     public int width;
     public int height;
-    //起点的X，Y坐标值
+    //起点(原点)的X，Y坐标值
     public int originalX = 100;
     public int originalY = 800;
 
@@ -65,7 +65,8 @@ public abstract class BaseView extends View {
         mGraphTitle = typedArray.getString(R.styleable.MyGraphStyle_graphTitle);
         mXAxisName = typedArray.getString(R.styleable.MyGraphStyle_xAxisName);
         mYAxisName = typedArray.getString(R.styleable.MyGraphStyle_yAxisName);
-        mAxisTextColor = typedArray.getInteger(R.styleable.MyGraphStyle_axisTextColor, context.getResources().getColor(android.R.color.black));
+        mAxisTextColor = typedArray.getInteger(R.styleable.MyGraphStyle_axisTextColor,
+                context.getResources().getColor(android.R.color.black));
         mAxisTextSize = typedArray.getDimension(R.styleable.MyGraphStyle_axisTextSize, 12);
 
         //取到TypeArray对象时记得判断回收
@@ -138,7 +139,7 @@ public abstract class BaseView extends View {
 
         //width = 屏幕的宽 - 起始点的X坐标，再减去右边距
         //height = 就是屏幕的Y坐标点，如果高度小于给定的值则取屏幕的高度  再减去距上边距
-        width = getWidth() - originalX;
+        width = getWidth() - originalX - 100;
         height = (originalY > getHeight() ? getHeight() : originalY) - 400;
 
         drawXAxis(canvas, mPaint);
@@ -164,19 +165,19 @@ public abstract class BaseView extends View {
         mPathY.lineTo(originalX + 10, originalY - height);
         mPathY.close();
         canvas.drawPath(mPathY,paint);
-        canvas.drawText(mYAxisName,originalX - 30, originalY - height - 30,paint);
+        canvas.drawText(mYAxisName,originalX - 50, originalY - height - 30,paint);
     }
 
 
     private void drawXAxisArrow(Canvas canvas, Paint paint) {
 
         Path mPathX = new Path();
-        mPathX.moveTo(originalX + width + 30, originalY);
-        mPathX.lineTo(originalX + width, originalY + 10);
-        mPathX.lineTo(originalX + width, originalY - 10);
+        mPathX.moveTo(originalX + width + 30+(width / axisDividedSizeX), originalY);
+        mPathX.lineTo(originalX + width+(width / axisDividedSizeX), originalY + 10);
+        mPathX.lineTo(originalX + width+(width / axisDividedSizeX), originalY - 10);
         mPathX.close();
         canvas.drawPath(mPathX, paint);
-        canvas.drawText(mXAxisName, originalX + width, originalX + 50,paint);
+        canvas.drawText(mXAxisName, originalX + width, originalY + 60,paint);
     }
 
     /**
@@ -226,7 +227,7 @@ public abstract class BaseView extends View {
             paint.setFakeBoldText(true);  //设置字体为粗体
 
             canvas.drawText(mGraphTitle, (getWidth() / 2) -
-                    (paint.measureText(mGraphTitle) / 2), originalY + 40, paint);
+                    (paint.measureText(mGraphTitle) / 2), originalY + 120, paint);
         }
     }
 
