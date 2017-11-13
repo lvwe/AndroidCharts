@@ -26,12 +26,12 @@ public class ChartView extends BaseView {
     @Override
     protected void drawColumn(Canvas canvas, Paint paint) {
 
-        if (columnInfo != null){
-            float cellWidth =  width / axisDividedSizeX;
+        if (columnInfo != null) {
+            float cellWidth = width / axisDividedSizeX;
             for (int i = 0; i < columnInfo.length; i++) {
                 paint.setColor(columnInfo[i][1]);
-                float leftTopY = originalY - height* (columnInfo[i][1])/axisDividedSizeY;
-                canvas.drawRect(originalX+ cellWidth*(i+1),leftTopY,originalX + cellWidth*(i+2),originalY,paint);
+                float leftTopY = originalY - height * (columnInfo[i][0]) / axisDividedSizeY;
+                canvas.drawRect(originalX + cellWidth * (i + 1), leftTopY, originalX + cellWidth * (i + 2), originalY, paint);
             }
         }
 
@@ -43,7 +43,7 @@ public class ChartView extends BaseView {
         float cellHeight = height / axisDividedSizeY;
         float cellValue = maxAxisValueY / axisDividedSizeY;
         for (int i = 1; i < axisDividedSizeY; i++) {
-            canvas.drawText(cellValue*i+"",originalX - 30,originalY - cellHeight * i + 10,paint);
+            canvas.drawText(String.valueOf(i), originalX - 55, originalY - cellHeight * i + 20, paint);
         }
 
 
@@ -53,9 +53,9 @@ public class ChartView extends BaseView {
     protected void drawYAxisScale(Canvas canvas, Paint paint) {
 
         float cellHeight = height / axisDividedSizeY;
-        for (int i = 0; i < axisDividedSizeY; i++) {
-            canvas.drawLine(originalX,(originalY - cellHeight * (i+1)),
-                    originalY + 10,(originalY - cellHeight * (i+1)),paint);
+        for (int i = 0; i < axisDividedSizeY-1; i++) {
+            canvas.drawLine(originalX, (originalY - cellHeight * (i + 1)),
+                    originalX + 10, (originalY - cellHeight * (i + 1)), paint);
         }
 
     }
@@ -68,8 +68,8 @@ public class ChartView extends BaseView {
         paint.setFakeBoldText(true);
         float cellWidth = width / axisDividedSizeX;
         for (int i = 0; i < axisDividedSizeX; i++) {
-            canvas.drawText(i+"",cellWidth * i+originalX-35,
-                    originalY + 30,paint);
+            canvas.drawText(String.valueOf(i), cellWidth * i + originalX - 20,
+                    originalY + 55, paint);
         }
 
     }
@@ -79,7 +79,8 @@ public class ChartView extends BaseView {
 
         float cellWidth = width / axisDividedSizeX;
         for (int i = 0; i < axisDividedSizeX - 1; i++) {
-            canvas.drawLine(cellWidth*(i+1)+originalX,originalY,cellWidth*(i+1)+originalX,originalY - 10,paint);
+            canvas.drawLine(cellWidth * (i + 1) + originalX,
+                    originalY, cellWidth * (i + 1) + originalX, originalY - 10, paint);
         }
 
     }
@@ -89,7 +90,7 @@ public class ChartView extends BaseView {
 
         paint.setColor(Color.BLUE);
         paint.setStrokeWidth(5);
-        canvas.drawLine(originalX,originalY,originalX,originalY - height,paint);
+        canvas.drawLine(originalX, originalY, originalX, originalY - height, paint);
     }
 
     @Override
@@ -97,6 +98,6 @@ public class ChartView extends BaseView {
 
         paint.setColor(Color.BLACK);
         paint.setStrokeWidth(5);
-        canvas.drawLine(originalX,originalY,originalX + width,originalY,paint);
+        canvas.drawLine(originalX, originalY, originalX + width, originalY, paint);
     }
 }
