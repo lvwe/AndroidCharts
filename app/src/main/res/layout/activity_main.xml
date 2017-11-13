@@ -2,6 +2,7 @@
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -9,10 +10,15 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.administrator.androidcharts.MainActivity">
+    tools:context="com.example.administrator.androidcharts.MainActivity"
+    >
 
-    <TextView
-        android:layout_width="wrap_content"
+    <com.example.administrator.androidcharts.View.ChartView
+        android:id="@+id/columnView"
+        android:layout_width="600dp"
         android:layout_height="wrap_content"
-        android:text="Hello World!"/>
+        app:graphTitle="Android柱形图"
+        app:axisTextSize="20sp"
+        app:xAxisName="X轴"
+        app:yAxisName ="Y轴"/>
 </RelativeLayout>
