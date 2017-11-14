@@ -4,8 +4,8 @@
 ### 一、直方图
 
 <figure class="half">
- <img src="{{ site.url }}/raw/chart01.PNG">
-  <img src="{{ site.url }}/raw/chart02.PNG">
+ <img src="https://github.com/lvwe/AndroidCharts/blob/master/raw/chart01.PNG">
+  <img src="https://github.com/lvwe/AndroidCharts/blob/master/raw/chart02.PNG">
 
 </figure>
 
