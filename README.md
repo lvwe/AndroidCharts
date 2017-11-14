@@ -4,7 +4,7 @@
 ### 一、直方图
 
  <img src="https://github.com/lvwe/AndroidCharts/blob/master/raw/chart01.PNG">
-  <img src="https://github.com/lvwe/AndroidCharts/blob/master/raw/chart02.PNG">
+  <img src="https://github.com/lvwe/AndroidCharts/blob/master/raw/chart02.png">
 
 
 
