@@ -2,8 +2,8 @@
 这个Demo项目依赖MPAndroidChart图表库，从基础图形开始，深入学习了解Android中绘图套路及注意事项。
 
 ### 一、自定义View直方图+MPAndroidChart直方图
-![https://github.com/lvwe/AndroidCharts/blob/master/raw/chart01.PNG]<img src="https://github.com/lvwe/AndroidCharts/blob/master/raw/chart01.PNG" width="400">
-![]<img src="https://github.com/lvwe/AndroidCharts/blob/master/raw/chart02.png" width="400">
+<img src="https://github.com/lvwe/AndroidCharts/blob/master/raw/chart01.PNG" width="400">
+<img src="https://github.com/lvwe/AndroidCharts/blob/master/raw/chart02.png" width="400">
 
 ### 二、曲线图
 
