@@ -7,7 +7,6 @@
     <img src="https://github.com/lvwe/AndroidCharts/blob/master/raw/chart01.PNG">
     <img src="https://github.com/lvwe/AndroidCharts/blob/master/raw/chart02.PNG">
 </figure>
-![image](https://github.com/lvwe/AndroidCharts/blob/master/raw/chart01.PNG)
 
 
 ### 二、曲线图
