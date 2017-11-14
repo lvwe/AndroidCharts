@@ -3,7 +3,7 @@
 
 ### 一、自定义View直方图+MPAndroidChart直方图
 ![]<img src="https://github.com/lvwe/AndroidCharts/blob/master/raw/chart01.PNG" width="400">
-  <img src="https://github.com/lvwe/AndroidCharts/blob/master/raw/chart02.png" width="400">
+![]<img src="https://github.com/lvwe/AndroidCharts/blob/master/raw/chart02.png" width="400">
 
 ### 二、曲线图
 
