@@ -3,7 +3,7 @@
 
 ### 一、直方图
 <figure class="half">
- <img src="https://github.com/lvwe/AndroidCharts/blob/master/raw/chart01.PNG" width="100">
+ <img src="https://github.com/lvwe/AndroidCharts/blob/master/raw/chart01.PNG" title="aaa" width="100">
   <img src="https://github.com/lvwe/AndroidCharts/blob/master/raw/chart02.png" width="100">
 </figure>
 
