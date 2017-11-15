@@ -1,3 +1,36 @@
 <resources>
     <string name="app_name">AndroidCharts</string>
+
+    <string name="title_bar_chart">简单直方图</string>
+    <string name="title_curve_chart">简单曲线图</string>
+    <string name="show_shadow">展示阴影图</string>
+    <string name="show_circle">显示圆点</string>
+    <string name="title_line_chart">简单折线图</string>
+    <string name="title_k_bar">MPAC实现K线图</string>
+    <string name="title_pie_chart">MPAC实现饼状图</string>
+    <string name="no_data">暂无数据</string>
+    <string name="pie_center">利用MPAC来实现饼状图</string>
+    <string name="title_randar_chart">MPAC实现雷达图</string>
+    <string name="title_simple_graph">基础图形的绘制</string>
+    <string name="title_simple_column">简单直方图的绘制</string>
+    <string name="title_simple_curve">简单曲线图的绘制</string>
+    <string name="titile_moji">仿墨迹天气APP</string>
+    <string name="title_tonghuashun">仿同花顺K线图</string>
+    <string name="title_alipay">仿支付宝芝麻信用分</string>
+
+
+    <string-array name="chart_array">
+        <item>MPAC实现直方图</item>
+        <item>MPAC实现曲线图</item>
+        <item>MPAC实现折线图</item>
+        <item>MPAC实现K线图</item>
+        <item>MPAC实现饼状图</item>
+        <item>MPAC实现雷达图</item>
+        <item>Android基本图形的绘制</item>
+        <item>简单直方图的绘制</item>
+        <item>简单曲线图的绘制</item>
+        <item>仿墨迹天气温度曲线</item>
+        <item>仿同花顺K线图</item>
+        <item>仿支付宝芝麻信用分</item>
+    </string-array>
 </resources>

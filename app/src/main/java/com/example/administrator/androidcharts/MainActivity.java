@@ -1,21 +1,42 @@
 package com.example.administrator.androidcharts;
 
-import android.graphics.Color;
-import android.support.v7.app.AppCompatActivity;
+import android.app.ListActivity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 
-import com.example.administrator.androidcharts.View.ChartView;
+import com.example.administrator.androidcharts.view.ChartView;
 
-public class MainActivity extends AppCompatActivity {
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+
+public class MainActivity extends ListActivity {
 
     private ChartView mChartView;
+    private List<? extends Map<String, ?>> mDatas = new ArrayList<>();
+    private String[] mFrom;
+    private int[] mTo;
+
+    private ListView mListView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        mChartView = (ChartView) findViewById(R.id.columnView);
+        mListView = (ListView) findViewById(android.R.id.list);
+        initParams();
+        mListView.setAdapter(new ArrayAdapter<String>(this,
+                android.R.layout.simple_list_item_single_choice,mFrom));
+
+
+
+
+       /* mChartView = (ChartView) findViewById(R.id.columnView);
         int[][] columnInfo = new int[][]{
 
                 {3, Color.BLUE},
@@ -28,6 +49,45 @@ public class MainActivity extends AppCompatActivity {
         };
         mChartView.setXAxisValue(10, 8);
         mChartView.setYAxisValue(10,7);
-        mChartView.setColumnInfo(columnInfo);
+        mChartView.setColumnInfo(columnInfo);*/
+    }
+
+    private void initParams() {
+        mFrom = getResources().getStringArray(R.array.chart_array);
+        mTo = new int[]{R.id.tv_item_func};
+        mListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                switch (position){
+                    case 0:
+                        Intent intent = new Intent(MainActivity.this,BarChartActivity.class);
+                        startActivity(intent);
+                        break;
+                    case 1:
+                        break;
+                    case 2:
+                        break;
+                    case 3:
+                        break;
+                    case 4:
+                        break;
+                    case 5:
+                        break;
+                    case 6:
+                        break;
+                    case 7:
+                        break;
+                    case 8:
+                        break;
+                    case 9:
+                        break;
+                    case 10:
+                        break;
+                    case 11:
+                        break;
+                }
+            }
+        });
+
     }
 }

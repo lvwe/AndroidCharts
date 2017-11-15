@@ -13,12 +13,18 @@
     tools:context="com.example.administrator.androidcharts.MainActivity"
     >
 
-    <com.example.administrator.androidcharts.View.ChartView
+    <!--<com.example.administrator.androidcharts.View.ChartView
         android:id="@+id/columnView"
         android:layout_width="600dp"
         android:layout_height="wrap_content"
         app:graphTitle="Android柱形图"
         app:axisTextSize="20sp"
         app:xAxisName="X轴"
-        app:yAxisName ="Y轴"/>
+        app:yAxisName ="Y轴"/>-->
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:drawSelectorOnTop="false"></ListView>
 </RelativeLayout>
