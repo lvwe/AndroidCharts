@@ -19,6 +19,8 @@
         </activity>
         <activity android:name=".BarChartActivity">
         </activity>
+        <activity android:name=".CurveChartActivity">
+        </activity>
     </application>
 
 </manifest>
