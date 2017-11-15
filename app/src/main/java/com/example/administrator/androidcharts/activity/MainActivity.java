@@ -72,6 +72,7 @@ public class MainActivity extends ListActivity {
                         ActivityRouter.goToTarget(MainActivity.this,LineChartActivity.class);
                         break;
                     case 3:
+                        ActivityRouter.goToTarget(MainActivity.this,KChartActivity.class);
                         break;
                     case 4:
                         break;
