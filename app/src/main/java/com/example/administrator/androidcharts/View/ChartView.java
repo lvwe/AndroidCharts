@@ -1,4 +1,4 @@
-package com.example.administrator.androidcharts.View;
+package com.example.administrator.androidcharts.view;
 
 import android.content.Context;
 import android.graphics.Canvas;
