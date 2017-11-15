@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.administrator.androidcharts.BarChartActivity">
+    tools:context="com.example.administrator.androidcharts.activity.BarChartActivity">
 
     <com.github.mikephil.charting.charts.BarChart
         android:id="@+id/bc_barChart"

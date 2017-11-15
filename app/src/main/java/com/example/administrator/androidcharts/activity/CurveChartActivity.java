@@ -1,10 +1,9 @@
-package com.example.administrator.androidcharts;
+package com.example.administrator.androidcharts.activity;
 
 import android.graphics.Color;
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.view.View;
 
+import com.example.administrator.androidcharts.R;
 import com.github.mikephil.charting.charts.LineChart;
 import com.github.mikephil.charting.components.Description;
 import com.github.mikephil.charting.components.XAxis;

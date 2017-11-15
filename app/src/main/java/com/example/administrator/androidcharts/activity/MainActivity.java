@@ -1,4 +1,4 @@
-package com.example.administrator.androidcharts;
+package com.example.administrator.androidcharts.activity;
 
 import android.app.ListActivity;
 import android.content.Intent;
@@ -8,6 +8,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+import com.example.administrator.androidcharts.R;
 import com.example.administrator.androidcharts.utils.ActivityRouter;
 import com.example.administrator.androidcharts.view.ChartView;
 
@@ -68,6 +69,7 @@ public class MainActivity extends ListActivity {
                         ActivityRouter.goToTarget(MainActivity.this, CurveChartActivity.class);
                         break;
                     case 2:
+                        ActivityRouter.goToTarget(MainActivity.this,LineChartActivity.class);
                         break;
                     case 3:
                         break;

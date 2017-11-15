@@ -1,10 +1,13 @@
-package com.example.administrator.androidcharts;
+package com.example.administrator.androidcharts.activity;
 
 import android.app.ActionBar;
 import android.support.annotation.Nullable;
 import android.os.Bundle;
 import android.view.View;
 
+import com.example.administrator.androidcharts.DayAxisValueFormatter;
+import com.example.administrator.androidcharts.MyAxisValueFormatter;
+import com.example.administrator.androidcharts.R;
 import com.github.mikephil.charting.charts.BarChart;
 import com.github.mikephil.charting.components.Legend;
 import com.github.mikephil.charting.components.XAxis;
