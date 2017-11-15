@@ -25,6 +25,8 @@
         </activity>
         <activity android:name=".activity.KChartActivity">
         </activity>
+        <activity android:name=".activity.PieChartActivity">
+        </activity>
     </application>
 
 </manifest>
