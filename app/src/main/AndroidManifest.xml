@@ -27,6 +27,8 @@
         </activity>
         <activity android:name=".activity.PieChartActivity">
         </activity>
+        <activity android:name=".activity.RadarChartActivity">
+        </activity>
     </application>
 
 </manifest>
