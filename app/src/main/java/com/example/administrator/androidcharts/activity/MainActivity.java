@@ -81,6 +81,7 @@ public class MainActivity extends ListActivity {
                         ActivityRouter.goToTarget(MainActivity.this,RadarChartActivity.class);
                         break;
                     case 6:
+                        ActivityRouter.goToTarget(MainActivity.this,SimpleGraphActivity.class);
                         break;
                     case 7:
                         break;

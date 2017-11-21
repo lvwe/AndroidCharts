@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_simple_graph"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.administrator.androidcharts.activity.SimpleGraphActivity">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="4">
+
+        <Button
+            android:text="@string/draw_circle"
+            android:onClick="drawCircle"/>
+
+        <Button
+            android:text="@string/draw_triangle"
+            android:onClick="drawTriangle"/>
+
+        <Button
+            android:text="@string/draw_round_rect"
+            android:onClick="drawRect"/>
+
+        <Button
+            android:text="@string/draw_arc"
+            android:onClick="drawArc"/>
+
+        <Button
+            android:text="@string/draw_bezier"
+            android:onClick="drawBezier"/>
+    </GridLayout>
+    
+    <com.example.administrator.androidcharts.view.CanvasGraphView
+        android:id="@+id/base_graph"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"/>
+
+</LinearLayout>
