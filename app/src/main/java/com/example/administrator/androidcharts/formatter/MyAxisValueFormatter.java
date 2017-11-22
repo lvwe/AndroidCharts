@@ -1,4 +1,4 @@
-package com.example.administrator.androidcharts;
+package com.example.administrator.androidcharts.formatter;
 
 import com.github.mikephil.charting.components.AxisBase;
 import com.github.mikephil.charting.formatter.IAxisValueFormatter;

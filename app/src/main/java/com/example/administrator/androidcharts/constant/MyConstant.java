@@ -1,4 +1,4 @@
-package com.example.administrator.androidcharts;
+package com.example.administrator.androidcharts.constant;
 
 /**
  * Created by Administrator on 2017/11/21 0021.

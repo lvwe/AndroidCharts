@@ -9,13 +9,10 @@ import android.graphics.PointF;
 import android.graphics.PorterDuff;
 import android.graphics.PorterDuffXfermode;
 import android.graphics.RectF;
-import android.provider.SyncStateContract;
-import android.telecom.PhoneAccount;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.view.View;
 
-import com.example.administrator.androidcharts.MyConstant;
+import com.example.administrator.androidcharts.constant.MyConstant;
 import com.example.administrator.androidcharts.utils.TransformUtils;
 
 /**
