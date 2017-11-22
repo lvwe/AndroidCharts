@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_simple_curve"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.administrator.androidcharts.activity.SimpleCurveActivity">
+
+    <com.example.administrator.androidcharts.view.CurveView
+        android:id="@+id/curve_view"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        app:graphTitle="简单曲线图的绘制"
+        app:xAxisName="年份"
+        app:yAxisName="销售额（亿）"
+        app:axisTextSize="12sp"
+        app:showXAxis="true"/>
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:textOff="隐藏阴影"
+        android:textOn="显示阴影"
+        android:onClick="showHideShader"/>
+
+
+</LinearLayout>

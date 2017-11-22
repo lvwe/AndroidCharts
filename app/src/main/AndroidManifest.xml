@@ -33,6 +33,8 @@
         </activity>
         <activity android:name=".activity.SimpleColumnActivity">
         </activity>
+        <activity android:name=".activity.SimpleCurveActivity">
+        </activity>
     </application>
 
 </manifest>
