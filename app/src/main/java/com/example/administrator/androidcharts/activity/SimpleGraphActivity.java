@@ -1,12 +1,9 @@
 package com.example.administrator.androidcharts.activity;
 
 import android.graphics.Paint;
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.view.View;
-import android.widget.Toast;
 
-import com.example.administrator.androidcharts.MyConstant;
+import com.example.administrator.androidcharts.constant.MyConstant;
 import com.example.administrator.androidcharts.R;
 import com.example.administrator.androidcharts.view.CanvasGraphView;
 import com.github.mikephil.charting.utils.ColorTemplate;

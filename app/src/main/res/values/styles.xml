@@ -15,6 +15,11 @@
         <attr name="yAxisName" format="string"></attr>
         <attr name="axisTextSize" format="dimension|integer"></attr>
         <attr name="axisTextColor" format="color|integer"></attr>
+
+        <attr name="showOrigin" format="boolean"></attr>
+        <attr name="showXAxis" format="boolean"></attr>
+        <attr name="showYAxis" format="boolean"></attr>
+        <attr name="axisColor" format="integer|color|reference"></attr>
     </declare-styleable>
     
 </resources>

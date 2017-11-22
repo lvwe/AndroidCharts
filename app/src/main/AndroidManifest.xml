@@ -31,6 +31,8 @@
         </activity>
         <activity android:name=".activity.SimpleGraphActivity">
         </activity>
+        <activity android:name=".activity.SimpleColumnActivity">
+        </activity>
     </application>
 
 </manifest>

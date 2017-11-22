@@ -84,6 +84,7 @@ public class MainActivity extends ListActivity {
                         ActivityRouter.goToTarget(MainActivity.this,SimpleGraphActivity.class);
                         break;
                     case 7:
+                        ActivityRouter.goToTarget(MainActivity.this,SimpleColumnActivity.class);
                         break;
                     case 8:
                         break;
