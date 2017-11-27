@@ -9,17 +9,15 @@
 <img src="https://github.com/lvwe/AndroidCharts/blob/master/raw/simpCurve.png" width="400">
 <img src="https://github.com/lvwe/AndroidCharts/blob/master/raw/curve.png" width="400">
 
-
 ### 三、折线图
 <img src="https://github.com/lvwe/AndroidCharts/blob/master/raw/lineChart.png" width="400">
-
 
 ### 四、K线图
 <img src="https://github.com/lvwe/AndroidCharts/blob/master/raw/k.png" width="400">
 
-
 ### 五、雷达图
 <img src="https://github.com/lvwe/AndroidCharts/blob/master/raw/radar.png" width="400">
+
 ### 六、饼状图
 <img src="https://github.com/lvwe/AndroidCharts/blob/master/raw/pieChart.png" width="400">
 
